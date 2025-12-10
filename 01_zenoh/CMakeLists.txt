@@ -6,6 +6,9 @@ message(STATUS "配置路径: ${CMAKE_PREFIX_PATH}")
 message(STATUS "系统默认:${CMAKE_SYSTEM_PREFIX_PATH}")
 message(STATUS "环境变量:$ENV{PKG_CONFIG_PATH}")
 
+# 生成compile_commands.json
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 # 构建库
 set(SRC_LIST src/base.cpp)  # 指定源文件路径
 add_library(MyLib ${SRC_LIST})

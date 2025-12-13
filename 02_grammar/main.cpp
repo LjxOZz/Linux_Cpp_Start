@@ -1,14 +1,14 @@
 #include <iostream>
+#include <string>
 
 #include "base.h"
 
 using namespace std;
 
-
 int main(int argc, char** argv) 
 {
 
-    cout << "02_grammar" << endl;
+    std::cout << "02_grammar" << std::endl;
     
     Grammar test;
     

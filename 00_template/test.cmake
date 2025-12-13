@@ -19,3 +19,5 @@ message(STATUS "list:${LIST1}")
 
 list(LENGTH LIST1 len) #获取长度
 message(STATUS "list_len:${len}")
+
+

@@ -4,9 +4,20 @@
 
 这是一个代码模板
 
-- CMakeList.txt来构建
-- include文件夹放头文件
-- src文件夹放源文件
+- 1.CMakeList.txt来构建
+- 2.include文件夹放头文件
+- 3.src文件夹放源文件
+- 4.所有库安装到~/.local目录下
+- 5.spdlog库
+
+### spdlog
+```bash
+git clone https://github.com/gabime/spdlog.git
+cd spdlog  && mkdir build && cd build
+cmake .. -DCMAKE_INSTALL_PREFIX=~/.local
+cmake --build .
+cmake --install .
+```
 
 ### 参考
 

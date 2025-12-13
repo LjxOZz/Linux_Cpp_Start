@@ -1,14 +1,18 @@
-#include <iostream>
+// #include <iostream>
+
+#include "spdlog/spdlog.h"
 
 #include "base.h"
 
 int main(int argc, char** argv) 
 {
+    spdlog::set_level(spdlog::level::debug);
 
-    std::cout << "Hello World" << std::endl;
-    
+    spdlog::info("This is 00_Template");
+    spdlog::info("It have a {1} {0}", "pack", "spdlog");
+
     Dog dog;
-    std::cout << dog.barking() << std::endl;
+    spdlog::debug("Dog {0}", dog.barking());
 
     return 0;
 }

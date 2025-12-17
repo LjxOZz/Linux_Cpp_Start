@@ -14,7 +14,7 @@ public:                         // 访问修饰符
     void barking();             // 类内部定义的方法/函数
     void zz_and_yy_test();
     void z_y_value();
-    void Character_operation();
-
+    void character_operation();
+    void string_class();
 };
 

@@ -14,8 +14,9 @@ int main(int argc, char** argv)
     
     test.barking();
     test.zz_and_yy_test();
+    test.string_class();
 
-
+    
     return 0;
 }
 

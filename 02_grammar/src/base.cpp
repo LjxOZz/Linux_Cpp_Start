@@ -57,7 +57,16 @@ void Grammar::z_y_value()
     std::tolower
     std::toupper
 */
-void Grammar::Character_operation()
+void Grammar::character_operation()
 {
 
+}
+void Grammar::string_class()
+{
+    string s1 = "hello";
+    string s2 = "world";
+    string s = s1 + s2;
+
+    cout << "s1 + s2 = " << s << endl;
+    
 }
